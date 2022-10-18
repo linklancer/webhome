@@ -1,0 +1,30 @@
+{
+  "id": "3693016",
+  "name": "博客2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3970852",
+      "name": "CSS3",
+      "font_class": "CSS",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "3970853",
+      "name": "HTML5",
+      "font_class": "HTML",
+      "unicode": "e706",
+      "unicode_decimal": 59142
+    },
+    {
+      "icon_id": "29371899",
+      "name": "outline-java-script",
+      "font_class": "outline-java-script",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    }
+  ]
+}

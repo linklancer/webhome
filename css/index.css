@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+ /* overflow-y: auto;  */   
+ overflow-x: hidden;
+ font-family: '微软雅黑';
+}
+/* 改变默认滚动条 */
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 1px;
+}
+
+/*  //滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+}
+
+/*  //轨道部分 */
+::-webkit-scrollbar-track {
+    background-color: skyblue;
+}
+/* 外部容器 */
+.bigout-cont{
+    width:100vw;
+    height:100vh;
+    overflow: auto;
+}
+/* 背景容器 */
+#back-cont{
+    width:100vw;
+    height:100vh;
+    background: url(../images/cover.jpg);
+    background-size:cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+    
+}
+/* 导航栏部分 */
+  #nav-cont{
+    width:90%;
+    height:50px;
+    background-color: rgba(114, 138, 148, 0.903);
+    margin:0 auto;
+    position:fixed;
+    top:30px;
+    left:5vw;
+    color:rgb(255, 255, 255);
+   z-index: 1111;
+    /* 阴影 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*  导航栏左部*/
+#nav-cont #nav-left{
+    float: left;
+    width:100px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* 导航栏右部  */
+#nav-cont #nav-right{
+    float:right;
+    width:250px;
+    height:50px;
+    display: flex;
+    line-height: 50px;
+}
+#nav-right li{
+    width:auto;
+    height:50px;
+    margin-right:50px;
+    position: relative;
+    padding: 1px 1px;
+    font-size: 17px;
+}
+#nav-right li .text-line{
+    position: absolute;
+    display: block;
+    width:0px;
+    height:3px;
+    top:43px;
+    transition: width .3s;
+    background-color: aliceblue;
+    opacity: 0;
+}
+#nav-right li:hover{
+    cursor: pointer;
+}
+#nav-right li a,
+#nav-left span a
+{
+    text-decoration: none;
+    color:black;
+}
+
+#nav-right li:hover .text-line{
+    opacity: 1;
+    width:100%;
+    
+}
+/* 欢迎词 */
+#welcome-textera{
+    width:600px;
+    height:300px;
+    margin:430px auto;
+  /*   background-color: aqua; */
+}
+#welcome-textera span{
+    display: block;
+    width:100%;
+    height:50px;
+    font-family: '仿宋';
+    color:white;
+    font-size: 20px;
+    animation-name:backInLeft ;
+    animation-duration: 3.6s;
+}
+/* 构造容器 */
+#contruct-container{
+    width:100vw;
+    height:500px;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+#contruct-container  #img-container{
+    width:70%;
+    height:300px;
+    position: absolute;
+    left:15vw;
+    top:100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 三张图片 */
+#img-container li{
+    width:200px;
+    height:200px;
+    margin-right:50px;
+   /*  background-color: orange; */
+    position: relative;
+}
+#img-container li img{
+    width:100%;
+    height:100%;
+    /* font-size: 30px; */
+}
+#img-container li .plus{
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    left:18vw;
+    top:-130px;
+}
+/*标明  */
+.contruct-title{
+    width:400px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    /* background-color: orange; */
+    position: absolute;
+    top:250px;
+    left:-90px;
+    font-family: '宋体';
+    font-size: 20px;
+}
+/*  魔方旋转容器*/
+#transform-container{
+    width:100vw;
+    height:400px;
+    background-color:rgba(52, 58, 64, 0.78);
+    position: relative;
+    
+}
+#transform-container .transform-img{
+    width:200px;
+    height:200px;
+    position: relative;
+    left:42%;
+    top:100px;
+    /* 设置3d变形效果 */
+    transform-style: preserve-3d;
+    /* transform: rotateX(180deg); */
+    animation: trans 6s  linear infinite forwards;
+   /*  background-color: aqua; */
+    animation-play-state: running;
+    /* transform: rotateY(60deg); */
+}
+.transform-img li{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    /* left:30%; */
+    
+}
+.transform-img li img{
+    width:100%;
+    height:100%;
+}
+.first-img{
+    transform: rotateY(-120deg)  ;
+    backface-visibility: hidden; 
+     left:-34px;
+   /*  opacity: 0; */
+}
+.second-img{
+    z-index: 111;
+    transform: translateZ(75px) ;
+    backface-visibility: hidden;
+   /*  opacity: 0; */
+}
+.third-img{
+    transform: rotateY(120deg) ;
+    backface-visibility: hidden;
+    left:36px;
+}
+/* 定义旋转容器关键帧 */
+@keyframes trans {
+    from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(360deg);
+      }
+}
+/*  魔方下面介绍句*/
+.instrduce-cont{
+    width:300px;
+    height:60px;
+    position: absolute;
+    left:-77px;
+    color:white;
+    /* background-color: aqua; */
+    line-height: 60px;
+    text-align: center;
+    top:160px;
+}
+/* 底部介绍 */
+#bottom-cont{
+    width:100vw;
+    height:270px;
+    background-color: rgb(52,58,64);
+    /* 网格布局 */
+    display: grid;
+    /* 一共2行3列 */
+    grid-template-columns: 1.7fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+/* 博客由来 */
+.before-cont{
+  /*   background-color: antiquewhite; */
+    height:150px;
+}
+.before-cont .bottom-title{
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.529);
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.bottom-texa{
+    color: rgba(255, 255, 255, 0.378);
+    display: flex;
+    flex-direction: column;
+}
+.bottom-texa span{
+    height:23px;
+    display: block;
+
+}
+/* 相关链接 */
+/*   关于 */
+#after-cont,
+#about-cont
+{
+  /*   background-color: orange; */
+    width:100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#after-cont li,
+#about-cont li
+{
+    height:20px;
+    color: rgba(255, 255, 255, 0.529);
+    transition: color 1s;
+    margin-bottom:15px;
+}
+#after-cont li:hover,
+#about-cont li:hover
+{
+cursor: pointer;
+color: white;
+}
+/* 最底部 */
+#last-bottom{
+    width: 300px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:27vw;
+    align-items: center;
+}
+#last-bottom span{
+    display: block;
+    height:33px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.654);
+}
+#last-bottom span:last-child{
+    color:rgba(255, 255, 255, 0.217);
+}

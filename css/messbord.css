@@ -1,0 +1,255 @@
+#message-cont{
+    width:100vw;
+    height:70vh;
+    background: url(../images/backgr.jpg);
+    background-size:cover;
+    background-position: 0 -100px;
+    overflow: hidden;
+}
+/*  留言输入*/
+#bord-cont{
+    width:700px;
+    height:200px;
+    /* background-color: antiquewhite; */
+    margin:0 auto;
+    margin-top:80px;
+
+}
+.bord-title{
+    width:100%;
+    height:50px;
+   /*  background-color: aqua; */
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color:white;
+}
+/* 留言框  */
+.bord-bottom{
+    width:700px;
+    height:100px;
+    overflow: hidden;
+    background-color: rgb(241,243,244);
+    display: flex;
+}
+/* 留言框左部 */
+.bottom-left{
+    height:85%;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+.bottom-left span{
+    display: block;
+    font-size: 14px;
+}
+.bottom-left span:first-child{
+    width:40px;
+    height:40px;
+    margin:0 auto;
+    margin-bottom:15px;
+    margin-left:10px;
+}
+.bottom-left span:last-child{
+    display: block;
+    width: 70px;
+    height:40px;
+    margin-left:7px;
+}
+.bottom-left span:last-child:hover{
+    cursor: pointer;
+}
+.bottom-left span:first-child img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+/*  留言框右部*/
+.bottom-right{
+    width:570px;
+    height:80%;
+    margin-left: 20px;
+    /* background-color: aqua; */
+}
+.bottom-right textarea{
+    width:100%;
+    height:80%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.136);
+    margin-top:20px;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 6px;
+  
+}
+.bottom-right textarea::placeholder{
+    color:rgba(0, 0, 0, 0.351);
+    font-size: 14px;
+    padding-top: 2px;
+}
+.submit{
+    width:60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: skyblue;
+    margin-top:6px
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.submit span{
+    font-size: 13px;
+}
+/* 留言区外部容器 */
+#world-mess{
+    width:100vw;
+    height:auto;
+    background-color: rgb(241,243,244);
+}
+/* 内部容器 */
+#inner-mess{
+    width:85vw;
+    height:auto;
+    background-color: rgb(241,243,244);
+    margin:0 auto;
+    display: flex;
+}
+ /* 留言框  */
+.inner-left{
+    width:65vw;
+    height:auto;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    margin-right:50px;
+}
+/* 每一个留言框 */
+.every-mess{
+    width:100%;
+    height:max-content;
+    /* min-height:130px; */
+    /* background-color: orange; */
+    display: flex;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+/* 左部头像 */
+.left-img{
+   width:50px;
+   height:50px; 
+   margin-top: 5px;
+   margin-right:40px;
+}
+.left-img span{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+}
+.left-img span img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+/* 右部留言板 */
+.right-mess{
+    width:95%;
+    height:auto;
+   /*  background-color: aqua; */
+    margin-top:5px;
+    border:1px solid rgba(0, 0, 0, 0.095);
+}
+/*  上方*/
+.ul-cont{
+    width: 100%;
+    height:auto;
+    min-height: 70px;
+    display: flex;
+   /*  background-color: orange; */
+    align-items: center;
+    margin-bottom:3px;
+
+}
+.ul-cont li:first-child{
+    width:92%;
+    margin-left:20px;
+}
+.ul-cont li:first-child span:last-child{
+    color:rgba(0, 0, 0, 0.483);
+}
+/* 下方 */
+.bootom-ul{
+    width:95%;
+    padding-left: 20px;
+    height:auto;
+    line-height: 30px;
+    min-height:30px;
+   /*  background-color: orange; */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+/*最新留言  */
+.new-mess{
+    width:300px;
+    height:350px;
+    background-color: white;
+    margin-top:25px;
+}
+/* 标题 */
+.new-title{
+    width:94%;
+    height:40px;
+    line-height: 40px;
+    margin:0 auto;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.133);
+}
+/*  留言 */
+.title-bottom{
+    width:94%;
+    height:60px;
+    margin:0 auto;
+    display: flex;
+    margin-top:10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.133);
+}
+.bottom-left{
+    width:35px;
+    height:30px;
+   /*  background-color: aquamarine; */
+    margin-right:15px;
+    margin-left:10px;
+}
+.bottom-left img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.right-bot{
+    width:90%;
+    height:100%;
+  /*   background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right-bot li{
+    height:50%;
+    width: 100%;
+    line-height: 30px;
+}
+.right-bot li:first-child span:first-child{
+    font-weight: 600;
+    font-size: 17px;
+}
+.right-bot li:first-child span:last-child{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.359);
+}
+.right-bot li:last-child{
+    color:rgba(0, 0, 0, 0.359);
+    font-size: 17px;
+}

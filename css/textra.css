@@ -1,0 +1,134 @@
+/* 背景 */
+#backtextra-cont{
+    width:100vw;
+    height:70vh;
+    background: url(../images/bak2.jpg);
+    background-size:cover;
+    position: relative;
+    background-position: 0 -100px;
+}
+#welcome2-textera{
+    width:500px;
+    height:100px;
+    position: absolute;
+    bottom: 1vh;
+    left:41vw;
+    color:white;
+    font-size: 18px;
+    font-family: '仿宋';
+}
+/* 技术介绍 */
+#tech-cont{
+    width:100vw;
+    height:100px;
+   /*  background-color: antiquewhite; */
+    display: flex;
+}
+#tech-inner{
+    width:80%;
+    height:100%;
+   /*  background-color: aqua; */
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#tech-inner div{
+    width:100px;
+    height:30px;
+    margin-right: 15px;
+   /*  background-color: orange; */
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.621);
+    background-color: #ffffff;
+    border:1px solid rgba(0, 0, 0, 0.265);
+}
+#tech-inner div:first-child{
+    background-color: rgb(87,101,117);
+    color:#ffffff;
+}
+#tech-inner div:hover{
+   cursor: pointer;
+   border:1px solid rgb(87,101,117);
+}
+/*技术文章外部容器  */
+#tech-text{
+    width:100vw;
+    height:max-content;
+    background-color: rgb(222,227,231);
+}
+/* 技术文章 */
+.text-cont{
+    width:76%;
+    height:100%;
+    margin:0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 第一个文章 */
+.text-cont .every-div{
+    width:260px;
+    height:min-content;
+    background-color: #ffffff;
+    margin-left: 25px;
+    position: relative;
+    margin-bottom:5px;
+}
+.every-div:hover{
+    cursor: pointer;
+}
+/* 图片容器 */
+.text-img{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.text-img img{
+    width:100%;
+    height: 100%;
+    transition: all .6s;
+}
+.text-img img:hover{
+    scale: 1.3;
+    cursor: pointer;
+}
+/*  文章标题*/
+.text-title{
+    width:90%;
+    height:50px;
+   /*  background-color:orange; */
+    text-align: center;
+    font-size: 18px;
+    margin:0 auto;
+    line-height: 25px;
+    padding-top: 10px;
+}
+/* 具体文章 */
+.text-main{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    padding-top: 2px;
+    color:rgba(0, 0, 0, 0.624);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+/*  底部tag*/
+.text-tag{
+    width:100%;
+    height:50px;
+  /*   background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    border-top:1px solid rgba(0, 0, 0, 0.175);
+    color:rgba(0, 0, 0, 0.624);
+    background-color: #f9fafb;
+}

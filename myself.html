@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我</title>
+    <link rel="stylesheet" href="./css/index.css">
+    </link>
+    <link rel="stylesheet" href="./css/reset.css">
+    </link>
+    <link rel="stylesheet" href="./css/messbord.css">
+    </link>
+    <link rel="stylesheet" href="./css/myself.css">
+    </link>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    </link>
+    <link rel="shortcut icon" href="./images/bitbug_favicon.ico" />
+
+</head>
+
+<body>
+    <!-- 外部容器 -->
+    <div class="bigout-cont">
+        <!-- 背景容器 -->
+        <div id="myself-cont">
+            <!-- 导航栏部分-->
+            <nav id="nav-cont">
+                <!-- 导航栏左部 -->
+                <div id="nav-left">
+                    <span><a href="./index.html" target="_self">kelisi</a></span>
+                </div>
+                <!-- 导航栏右部 -->
+                <ul id="nav-right">
+                    <li><a href="./textra.html" target="_self">博文</a>
+                        <!-- 下划线 -->
+                        <span class="text-line"></span>
+                    </li>
+                    <li><a href="./messbord.html" target="_self">留言</a>
+                        <span class="text-line"></span>
+                    </li>
+                    <li><a href="./myself.html" target="_self">我</a>
+                        <span class="text-line"></span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 弹幕 -->
+            <div id="scrool-font">
+            <marquee  scrollamount="10">我喜欢足球</marquee></marquee>
+            <marquee scrollamount="30">下面来欣赏一下一组足球巨星吧</marquee>
+            <marquee scrollamount="20" hspace="10">我是一个平平无奇的前端学习者</marquee>
+            <marquee scrolldelay="30">技术有限，还在不断努力学习中</marquee>
+            <marquee loop="2" scrollamount="10">欢迎大家来到这里</marquee>
+            <marquee scrolldelay="200" scrollamount="10" >加油 努力干</marquee>
+            </div>
+            
+
+        </div>
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/1.jpg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/3.jpg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/5.jpg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/2.jpg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/4.jpg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container"><img src="./images/6.jpg"></div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev  swiper-button-white"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- 底部介绍 -->
+        <div id="bottom-cont">
+            <!-- 博客由来 -->
+            <div class="before-cont">
+                <h3 class="bottom-title">博客由来</h3>
+                <div class="bottom-texa">
+                    <span>这是一个前端热爱学习者,为了完成老师布置的前端大作业</span>
+                    <span>临时完的博客成的一个前端静态博客网站</span>
+                    <span>当然,后续技术成熟后,</span>
+                    <span>我也会沿用这个已经搭建好大致框架~</span>
+                </div>
+            </div>
+            <!-- 相关链接 -->
+            <ul id="after-cont">
+                <li>相关链接</li>
+                <li>博文</li>
+                <li>旅行</li>
+            </ul>
+            <!-- 关于 -->
+            <ul id="about-cont">
+                <li>关于</li>
+                <li>关于我</li>
+                <li>关于博客</li>
+            </ul>
+            <!--最底部 -->
+            <div id="last-bottom">
+                <span>代码已托管至 Github,完全开源</span>
+                <span>2018 一 2022 © gkshi</span>
+                <span>蜀ICP备20221009103号</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        grabCursor: true,
+        zoom: true, //开启缩放功能
+        /*  updateOnImagesReady : true,
+         updateOnWindowResize: true, */
+        speed: 300,
+        // 自动切换
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        // 视差效果
+        parallax: 'true',
+        effect: 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflowEffect: {
+            rotate: 10,
+            stretch: 10,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+        },
+        /* rewind:true, */
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+    })
+
+
+</script>
+<script src="./js/index.js"></script>
+</html>
